@@ -1,0 +1,7 @@
+<h3>This is Server Component</h3>
+
+<button class="btn btn-primary"[disabled]="!allowNewServer"
+(click)="onCreateServer()">Add Server</button>
+
+<p>{{ serverCreationStatus}}</p>
+<h4 style="color: blue;">The Server with ID {{ serverId }} is {{ serverStatus }} .</h4>
