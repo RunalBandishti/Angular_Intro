@@ -1,3 +1,3 @@
 # Angular
 
-Basic Introduction and Demonstration of Angular Programs.
+Basic Introduction and Demonstration of Angular Programs
