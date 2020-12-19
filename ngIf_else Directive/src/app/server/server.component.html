@@ -1,0 +1,19 @@
+<h3>This is Server Component</h3>
+<label >Server Name</label>
+
+<input type="text"
+class="form-control"
+[(ngModel)]="serverName">
+
+
+<button class="btn btn-primary"[disabled]="!allowNewServer"
+(click)="onCreateServer()">Add Server</button>
+
+<p *ngIf="serverCreated; else noServer">Server was created,Server Name Is {{serverName}}</p>
+
+<ng-template #noServer>
+    <p>No Server Was Created For The Timebeing!</p>
+</ng-template>
+
+<!-- <p>{{ serverCreationStatus}}</p> -->
+<h4 style="color: blue;">The Server with ID {{ serverId }} is {{ serverStatus }} .</h4>
